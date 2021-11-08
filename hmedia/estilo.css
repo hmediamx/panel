@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+*{outline: 0;}
+html, body { height:100%; font-family: Trebuchet MS, Arial, Helvetica, sans-serif; }
+#contenedor { width: 960px; min-height:100%; height: auto!important; height:100%; margin: 0px auto -36px auto;
+box-shadow: 0px 0px 25px #666; -webkit-box-shadow: 0px 0px 25px #666;  -moz-box-shadow: 0px 0px 25px #666;
+overflow: hidden;
+}
+
+/*	=======================================================				ENCABEZADO			=======================================================  */
+#encabezado { background: url(img/logo.jpg) top center no-repeat; width: 960px;	margin-top: 5px; }
+.bloque_titulo { padding: 20px 0px 0px 140px; height: 85px; }
+.bloque_titulo h1 { font-size: 32px; color: #666; }
+.bloque_titulo h2 { font-size: 24px; }
+
+#menu { height: 30px; background: url(img/static.jpg) repeat-x; }
+#menu li a{ height: 25px; font-size: 15px; text-decoration: none; color: #666; padding: 7px 10px 0px 10px; float: left; }
+#menu li a:hover{ background: url(img/hover.jpg) repeat-x; color: #FFF; }
+
+/*	=======================================================				MAIN					=======================================================  */
+#main { width: 920px; padding: 15px 15px 60px 15px; margin: 0px auto; }
+#main h3 { color: #0C0; font-size: 26px; border-bottom: #ccc 2px solid; padding: 0 0 5px 15px; margin: 20px 0px 30px 0px; }
+.box { width: 400px; color: #999; border:  #999 2px solid; padding: 15px; margin: 100px auto; }
+.limpiar { clear: both; display: block; }
+.redondo { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+p { margin-bottom: 15px;}
+/*	=======================================================				PIE					=======================================================  */
+#pie { background: #000; width: 910px; height: 30px; margin: -30px auto 0px auto; padding: 3px 25px; }
+#pie .hmedia a{ height: 27px; color: #666; font-weight: bold; padding: 3px 10px 0px 33px; background: url(img/hmedia30x30.png) left top no-repeat; display: block; float:right; text-decoration: none; }
+#pie .hmedia a:hover{ color:#FFF; background: url(img/hmedia30x30.png) left -30px no-repeat; }
+
+/*	=======================================================				FORM 1					=======================================================  */
+#former1 { color: #666; }
+#former1 input, #former1 select, #former1 textarea { color: #999; font-size: 16px; border: #CCC 1px solid; padding: 3px; display: block; margin: 5px 0px 15px 0px; }
+#former1 textarea { min-width: 385px; min-height: 170px; resize: none; }
+.boton { background: #000; padding: 10px 5px; text-decoration: none; margin: 10px 0px; display: block; width: 160px; text-align: center; color: #FFF!important; border: 0px!important; }
+.boton:hover { background: #090; }
+
+/* - - -  - - -  - - - Vanadium Styles - - -  - - -  - - - */ 
+div.vanadium-invalid { border-color: red !important; border-style: solid !important; }
+div.vanadium-valid { border-color: green !important; border-style: solid !important; }
+.vanadium-message-value { font-style: italic; text-decoration: underline; }
+.vanadium-advice.vanadium-invalid, .vanadium-advice.vanadium-invalid * { color: red; font-weight: bold; }
+input.vanadium-valid { border-color: greenyellow; }
+input.vanadium-invalid { border-color: red; }
+#messages { height: 70px; padding: 0; border-color: yellow; }
+input.vanadium-valid ~ .vanadium-valid-advice { display: inline !important; color: green; }
+
+
+/*	=======================================================				TABLAS					=======================================================  */
+.registros { width: 100%; margin: 20px auto; }
+.registros th { background: #0C0 url(img/hover.jpg) repeat-x; height: 35px; color: #FFF; vertical-align: middle; border: 1px #CCC solid; }
+.registros th:first-letter{ text-transform: uppercase; }
+.registros th a{ color:#FFF; }
+.registros th a:hover{ color: #FF0; }
+.registros tr { color: #000; }
+.registros td { padding: 5px; vertical-align: middle; margin: 1px; border: 1px #CCC solid; }
+.registros img {	width: 80px; height: 30px; border: #000 1px solid; }
+.registros .row_oculto { background: #EEE; color: #AAA; }
+.registros .publico { color: #666; 	}
+.registros .destacado { background: #FF3; color: #000; }
+
+.tabla2 td { padding: 15px; text-align: right; }
+
+/*	=======================================================				FORM 1					=======================================================  */
+.bloque { padding: 14px 14px 5px 14px; background: #FFF; border: #CCC 1px solid; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.izq { float: left; margin: 0px 10px 10px 0px; overflow: hidden; display: block; }
+.der { float: right; margin: 0px 0px 10px 0px; overflow: hidden; display: block; }
+.chico { width: 270px; }
+.mediano { width: 425px; }
+.grande { width: 890px; }
+
+#former2 input { padding: 3px; border: #999 1px solid; }
+/*  - - -  - - -  - - - BOTONES SPRITE  - - -  - - -  - - -  */
+.modificar a, .publicar a, .destacar a, .eliminar a { background:url(img/sprite.png); display:block; height:32px; width:32px; text-indent:-9000%; }
+
+.modificar a{background-position:-32px -32px}
+.publicar a{background-position:0px -32px}
+.destacar a{background-position:-64px -32px}
+.eliminar a{background-position:-96px -32px}
+
+.modificar a:hover{background-position:-32px 0px}
+.publicar a:hover{background-position:0px 0px}
+.destacar a:hover{background-position:-64px 0px}
+.eliminar a:hover{background-position:-96px 0px}
+
+	
+.paginador {
+	text-align: center;
+	margin: 15px 0px;
+	}
+	
+.paginador a {
+	text-decoration: none;
+	padding: 3px 5px;
+	color: #999;
+	width: 15px;
+	margin: 0px;
+	}
+	
+.paginador a:hover {
+	background: #F00;
+	color: #FFF;
+	}
+
+
+/* Estilo al editar */
+.nicEdit-main h2 { color: #006; font-weight: normal; border-bottom: #666 2px solid; font-size: 24px; } /* subtitulos */
+.nicEdit-main h3 { width: 200px; float: right; background: #000; padding: 10px!important; font-size: 16px; margin-right: -48px; display: block; font-size: 20px!important; color: #FFF!important; } /* Balazos */
+.nicEdit-main h4 { display: block; border-left: #000 2px solid; padding: 5px 15px; color: #666; margin: 15px 0px 20px 0px; } /* em */
+.nicEdit-main h5 { display: block; font-style: italic; text-align: right; margin: 30px 0px 15px 20px; } /* cite */
+.nicEdit-main u { font-variant: small-caps; text-decoration: none; } /* versalitas */	
+.nicEdit-main i { font-style: italic; } /* Italicas */
